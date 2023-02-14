@@ -8,7 +8,9 @@ function debounce(callback, delay) {
 
 class View {
   constructor() {
-    this.app = document.getElementById("app");
+    this.app = this.createElement("div");
+    document.body.appendChild(this.app);
+
     this.searchLine = this.createElement("div", "search-line");
     this.searchInput = this.createElement("input", "search-input");
     this.searchCounter = this.createElement("span", "counter");
@@ -46,6 +48,7 @@ class View {
 
     repItem.addEventListener("click", () => {
       this.searchInput.value = "";
+      this.repsList.textContent = "";
       const selectedRepsWrapper = this.createElement("div", "card");
       const selectedRepList = this.createElement("div", "reps-list");
 
@@ -111,7 +114,7 @@ class Search {
   }
 
   clearRepsList() {
-    this.view.repsList.innerHTML = "";
+    this.view.repsList.textContent = "";
   }
 }
 
