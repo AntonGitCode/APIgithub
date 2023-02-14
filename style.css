@@ -1,55 +1,56 @@
 .body {
-    padding: 40px;
-    background-color: #C4C4C4;
+  padding: 40px;
+  background-color: #C4C4C4;
 }
+
 ul {
-    padding: 0px;
-  }
+  padding: 0px;
+}
   li {
-     list-style-type: none;
+    list-style-type: none;
   }
   
 .search-input {
- width: 500px;
- height: 61px;
- font-size: 48px;
- padding-left: 12px;
- border: none;
+  width: 500px;
+  height: 61px;
+  font-size: 48px;
+  padding-left: 12px;
+  border: none;
 }
 
 .reps {
-    padding: 0px;
+  padding: 0px;
 }
 
 li.rep-prev {
-    list-style-type: none;
-    width: 500px;
-    height: 44px;
-    background-color: #E3E3E3;
-    border: 2px solid black;
-    padding-left: 12px;
-    font-size: 30px;
+  list-style-type: none;
+  width: 500px;
+  height: 44px;
+  background-color: #E3E3E3;
+  border: 2px solid black;
+  padding-left: 12px;
+  font-size: 30px;
 }
 
   li.rep-prev:hover {
-      background-color: #65CDF9;
-      cursor: pointer;
+    background-color: #65CDF9;
+    cursor: pointer;
   }
 
 .card {
-    padding: 5px 16px;  
-    width: 500px;
-    border: 1px solid black;
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    font-size: 24px;
-    background-color: #E27BEB;
+  padding: 5px 16px;  
+  width: 500px;
+  border: 1px solid black;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 24px;
+  background-color: #E27BEB;
 }
 
 .escape {
-    align-self: center;
-  }
+  align-self: center;
+}
 
   .escape:hover {
     cursor: pointer;
