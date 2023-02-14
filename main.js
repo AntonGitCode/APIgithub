@@ -118,5 +118,5 @@ class Search {
   }
 }
 
-document.body.style.backgroundColor = "#C4C4C4";
+document.body.className = "body";
 new Search(new View());

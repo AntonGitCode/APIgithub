@@ -1,5 +1,6 @@
-body {
+.body {
     padding: 40px;
+    background-color: #C4C4C4;
 }
 ul {
     padding: 0px;
@@ -8,7 +9,6 @@ ul {
      list-style-type: none;
   }
   
-
 .search-input {
  width: 500px;
  height: 61px;
@@ -31,10 +31,10 @@ li.rep-prev {
     font-size: 30px;
 }
 
-li.rep-prev:hover {
-    background-color: #65CDF9;
-    cursor: pointer;
-}
+  li.rep-prev:hover {
+      background-color: #65CDF9;
+      cursor: pointer;
+  }
 
 .card {
     padding: 5px 16px;  
@@ -54,8 +54,9 @@ li.rep-prev:hover {
   .escape:hover {
     cursor: pointer;
   }
-.escape::after {
-  content: url('Vector8.svg');
-  transform: translateX(-45px) ;
-  position: absolute;
-} 
+
+  .escape::after {
+    content: url('Vector8.svg');
+    transform: translateX(-45px) ;
+    position: absolute;
+  } 
