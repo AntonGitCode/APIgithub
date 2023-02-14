@@ -42,7 +42,7 @@ class View {
   createReps(item) {
     const repItem = this.createElement("li", "rep-prev");
     repItem.innerHTML = item.name;
-    this.repsList.append(itemRep);
+    this.repsList.append(repItem);
 
     repItem.addEventListener("click", () => {
       this.searchInput.value = "";
