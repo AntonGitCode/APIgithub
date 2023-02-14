@@ -41,7 +41,7 @@ class View {
 
   createReps(item) {
     const repItem = this.createElement("li", "rep-prev");
-    repItem.innerHTML = item.name;
+    repItem.textContent = item.name;
     this.repsList.append(repItem);
 
     repItem.addEventListener("click", () => {
