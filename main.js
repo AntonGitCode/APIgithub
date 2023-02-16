@@ -1,4 +1,3 @@
-//JSCORE 4-3-7
 function debounce(callback, delay) {
   let timeout;
   return function () {
@@ -86,7 +85,10 @@ class View {
 class Search {
   constructor(view) {
     this.view = view;
-    this.view.searchInput.oninput = debounce(this.searchReps.bind(this), 450);
+    this.view.searchInput.addEventListener(
+      "input",
+      debounce(this.searchReps.bind(this), 450)
+    );
   }
 
   async searchReps() {
