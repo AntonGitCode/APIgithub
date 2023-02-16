@@ -1,4 +1,3 @@
-//JSCORE 4-3-7
 function debounce(callback, delay) {
   let timeout;
   return function () {
